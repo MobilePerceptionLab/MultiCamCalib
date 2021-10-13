@@ -277,12 +277,16 @@ void opengv2::ViewerBase::drawKeyFrames(bool drawCamera,
             std::advance(it, -localRange_);
         else
             it = keyframes_.begin();
-        for (auto preIt = it++; it != keyframes_.end(); preIt = it++) {
+        for (auto preIt = it++; it != keyframes_.end(); preIt = it++)
+        {
             Eigen::Vector3d Ow = it->second->twb();
             Eigen::Vector3d Owp = preIt->second->twb();
 
-            glVertex3d(Ow(0), Ow(1), Ow(2));
-            glVertex3d(Owp(0), Owp(1), Owp(2));
+            if (it->first - preIt->first < 100)
+            {
+                glVertex3d(Ow(0), Ow(1), Ow(2));
+                glVertex3d(Owp(0), Owp(1), Owp(2));
+            }
         }
 
         glEnd();

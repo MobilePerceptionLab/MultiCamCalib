@@ -166,14 +166,14 @@ void opengv2::PointLandmarkViewer::drawLandmarks() const {
     glColor3f(0.0, 0.0, 0.0);
     for (const auto &itr: landmarks_) {
         auto &lm = itr.second;
-        if (!lm->emptyObservations()) {
-            if (currentFrame != nullptr &&
-                lm->lastObservation().timestamp() == currentFrame->timeStamp()) {
+        //if (!lm->emptyObservations()) {
+        //    if (currentFrame != nullptr &&
+        //        lm->lastObservation().timestamp() == currentFrame->timeStamp()) {
                 currentLandmarks.push_back(lm);
-                continue;
-            }
+        //        continue;
+        //    }
             glVertex3d(lm->position()(0), lm->position()(1), lm->position()(2));
-        }
+        //}
     }
     glEnd();
 
