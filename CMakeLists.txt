@@ -49,5 +49,4 @@ find_package(nanoflann REQUIRED)
 #find_package(matplotlib_cpp) # plot library, matplotlib_cpp::matplotlib_cpp
 
 add_subdirectory(modules/core)
-add_subdirectory(modules/camera_calibration/dbscan)
 add_subdirectory(modules/camera_calibration/cv_calib)
