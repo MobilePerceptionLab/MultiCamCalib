@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<Settings>
+  <!-- Number of inner corners per a item row and column. (square, circle) -->
+  <BoardSize_Width>8</BoardSize_Width>
+  <BoardSize_Height>7</BoardSize_Height>
+  
+  <!-- The size of a square in some user defined metric system (pixel, millimeter)-->
+  <Square_Size>0.033</Square_Size>
+  
+  <!-- The type of input used for camera calibration. One of: CHESSBOARD CIRCLES_GRID ASYMMETRIC_CIRCLES_GRID -->
+  <Calibrate_Pattern>"CHESSBOARD"</Calibrate_Pattern>
+  
+  <!-- The input to use for calibration. 
+		To use an input camera -> give the ID of the camera, like "1"
+		To use an input video  -> give the path of the input video, like "/tmp/x.avi"
+		To use an image list   -> give the path to the XML or YAML file containing the list of the images, like "/tmp/circles_list.xml"
+		-->
+  <Input>"/home/ifwang/Seafile/Datasets/Multi_Camera_Calib/surround-view/pic/17082034gray92/resized"</Input>
+
+  <!-- The number of frame to be calibrated -->
+  <Calibrate_NrOfFrameToUse>100</Calibrate_NrOfFrameToUse>
+
+  <!--  If true (non-zero) we flip the input images around the horizontal axis.-->
+  <Input_FlipAroundHorizontalAxis>0</Input_FlipAroundHorizontalAxis>
+
+  <!-- Time delay between frames in case of camera. -->
+  <Input_Delay>0</Input_Delay>
+
+  <!-- Consider only fy as a free parameter, the ratio fx/fy stays the same as in the input cameraMatrix. 
+	   Use or not setting. 0 - False Non-Zero - True-->
+  <Calibrate_FixAspectRatio> 0 </Calibrate_FixAspectRatio>
+  <!-- If true (non-zero) tangential distortion coefficients  are set to zeros and stay zero.-->
+  <Calibrate_AssumeZeroTangentialDistortion>0</Calibrate_AssumeZeroTangentialDistortion>
+  <!-- If true (non-zero) the principal point is not changed during the global optimization.-->
+  <Calibrate_FixPrincipalPointAtTheCenter> 0 </Calibrate_FixPrincipalPointAtTheCenter>
+
+  <!-- If true (non-zero) we write to the output file the feature points.-->
+  <Write_DetectedFeaturePoints>0</Write_DetectedFeaturePoints>
+  <!-- If true (non-zero) we write to the output file the extrinsic camera parameters.-->
+  <Write_extrinsicParameters>1</Write_extrinsicParameters>
+  <!-- If true (non-zero) we write to the output file the refined 3D target grid points.-->
+  <Write_gridPoints>0</Write_gridPoints>
+  <!-- If true (non-zero) we show after calibration the undistorted images.-->
+  <Show_UndistortedImage>1</Show_UndistortedImage>
+  <!-- If true (non-zero) will be used fisheye camera model.-->
+  <Calibrate_UseFisheyeModel>0</Calibrate_UseFisheyeModel>
+  <!-- If true (non-zero) distortion coefficient k1 will be equals to zero.-->
+  <Fix_K1>0</Fix_K1>
+  <!-- If true (non-zero) distortion coefficient k2 will be equals to zero.-->
+  <Fix_K2>0</Fix_K2>
+  <!-- If true (non-zero) distortion coefficient k3 will be equals to zero.-->
+  <Fix_K3>0</Fix_K3>
+  <!-- If true (non-zero) distortion coefficient k4 will be equals to zero.-->
+  <Fix_K4>1</Fix_K4>
+  <!-- If true (non-zero) distortion coefficient k5 will be equals to zero.-->
+  <Fix_K5>1</Fix_K5>
+
+  <!-- If true (non-zero) will use pre-computed camera model for calibration.-->
+  <Extrinsic_Calibration>1</Extrinsic_Calibration>
+  <!-- If true (non-zero) will move the chessboard, record the trajectory of chessboard-->
+  <Move_Chessboard>1</Move_Chessboard>
+
+  <camera_matrix type_id="opencv-matrix">
+    <rows>3</rows>
+    <cols>3</cols>
+    <dt>d</dt>
+    <data>
+      900.699427500000	0	627.509875000000	0	900.182432000000	521.039882500000 0. 0. 1.</data></camera_matrix>
+      <!--1789.1166273680928 0. 1239.6722369837996 0. 1785.7580462299973 1024.59940838157-->
+  <distortion_coefficients type_id="opencv-matrix">
+    <rows>5</rows>
+    <cols>1</cols>
+    <dt>d</dt>
+    <data>
+      -0.309165 0.097799 0.000106 -0.000843 0.000000</data></distortion_coefficients>
+</Settings>
+</opencv_storage>

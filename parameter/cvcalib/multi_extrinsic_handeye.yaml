@@ -1,0 +1,52 @@
+%YAML:1.0
+#--------------------------------------------------------------------------------------------
+# Pattern Parameters, we use circle pattern
+#--------------------------------------------------------------------------------------------
+Is_Pattern_Asymmetric: 0
+
+BoardSize_Rows: 6
+BoardSize_Cols: 4
+
+# The size of a square (in meter)
+Square_Size: 0.15
+
+# The DIR of trajectories
+#Input: "/home/ifwang/Project/EventCalib/result/simulation_40sets/"
+#Input: "/home/ifwang/Project/EventCalib/result/real_202109/"
+#Input: "/home/ifwang/Project/EventCalib/result/real_stereo/"
+#Input: "/home/ifwang/Seafile/Datasets/for_handheld_handeye/"
+Input: "/home/ifwang/Seafile/Datasets/AGV_Calib/handeye/"
+
+
+# How many measurements will be used for calibration
+NumOfMeasures: 100
+#--------------------------------------------------------------------------------------------
+# Estimated Extrinsic parameter
+# Qbs: x,y,z,w
+# Not involved in calibration.
+#--------------------------------------------------------------------------------------------
+UseTsb: 0 # whether optimize in hand-eye calibration
+Qsb: [ 0.5665864008, -0.2600551701, 0.7562754681, -0.1984907433]       
+tsb: [ 0.03037296048, 0.0675074582, -0.02287099375 ]  
+#--------------------------------------------------------------------------------------------
+# ICRA2022 Simulation Setup
+# Type of Solver: Shah[0] Li[1]
+# Not useful in real experiments.
+#--------------------------------------------------------------------------------------------
+Noise_Rate: 0.0
+UseMultiCam: 1
+HandeyeSolver: 0
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.01
+Viewer.KeyFrameLineWidth: 2
+Viewer.GraphLineWidth: 2
+Viewer.PointSize: 5
+Viewer.CameraSize: 0.015
+Viewer.CameraLineWidth: 2
+Viewer.ViewpointX: 0
+Viewer.ViewpointY: -10
+Viewer.ViewpointZ: -0.1
+Viewer.ViewpointF: 2000
+Viewer.Facing: [1,0,0,0,1,0,0,0,1]
