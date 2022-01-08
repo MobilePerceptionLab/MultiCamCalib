@@ -1080,7 +1080,7 @@ static void saveCameraParams(Settings &s, Size &imageSize, Mat &cameraMatrix, Ma
                               << (s.flag & CALIB_FIX_K4 ? " +fix_k4" : "")
                               << (s.flag & CALIB_FIX_K5 ? " +fix_k5" : "");
         }
-        fs.writeComment(flagsStringStream.str());
+        //fs.writeComment(flagsStringStream.str());
     }
 
     fs << "flags" << s.flag;
