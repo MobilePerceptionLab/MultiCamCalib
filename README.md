@@ -27,4 +27,4 @@
 ## References
 
 <a id="1">[1]</a>
-Yifu Wang*, Wenqing Jiang*, Kun Huang, S oren Schwertfeger and Laurent Kneip. "Accurate calibration ofmulti-perspective cameras from a generalization of the hand-eye constraint" ,submit to the 2022 IEEE International conference on robotics and automation (ICRA).
+Yifu Wang*, Wenqing Jiang*, Kun Huang, S oren Schwertfeger and Laurent Kneip. "Accurate calibration ofmulti-perspective cameras from a generalization of the hand-eye constraint" ,accepted by the 2022 IEEE International conference on robotics and automation (ICRA).
