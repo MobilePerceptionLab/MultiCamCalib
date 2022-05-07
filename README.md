@@ -22,7 +22,7 @@
 6. Run: `./handeye_camera_calibration settingFilePath GTFilePath_1 TrajectoryFile_1 GTFilePath_2 TrajectoryFile_2 ...`
 
 ## Video
-[Experiments Video](coming soon)
+[Experiments Video](https://www.youtube.com/watch?v=9r19SDMskHI)
 
 ## References
 
