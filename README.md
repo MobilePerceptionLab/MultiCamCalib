@@ -24,7 +24,29 @@
 ## Video
 [Experiments Video](https://www.youtube.com/watch?v=9r19SDMskHI)
 
-## References
+## Datasets
+For convenience we provide a zip file for testing:
+   ```
+    'AGV_Calib_for_test/CAM_ID/resize' are for computing the camera trajectories individually. please refer to Usage 2. 
+    'AGV_Calib_for_test/CAM_ID/gt_CAM_ID' are fomulated captured trajectory from tracking system. please refer to Usage 4.
+    'AGV_Calib_for_test/handeye' contains the prepared GTFiles and TrajectoryFiles, please refer to Usage 5 and 6.
+   ```
+They can be downloaded from the[Datasets](https://drive.google.com/file/d/1rDOOAHZUM5KphkMJIIiLbKoPdTycfOeh/view?usp=sharing)
+
+## Related Papers
 
 <a id="1">[1]</a>
-Yifu Wang*, Wenqing Jiang*, Kun Huang, S oren Schwertfeger and Laurent Kneip. "Accurate calibration ofmulti-perspective cameras from a generalization of the hand-eye constraint" , 2022 IEEE International conference on robotics and automation (ICRA).
+Yifu Wang*, Wenqing Jiang*, Kun Huang, Sören Schwertfeger, Laurent Kneip. "Accurate calibration of multi-perspective cameras from a generalization of the hand-eye constraint", 2022 IEEE International conference on robotics and automation (ICRA).
+
+```
+@article{wang2022accurate,
+  author={Wang, Yifu and Jiang, Wenqing and Huang, Kun and Schwertfeger, S{\"o}ren and Kneip, Laurent},
+  booktitle={2022 International Conference on Robotics and Automation (ICRA)}, 
+  title={Accurate Calibration of Multi-Perspective Cameras from a Generalization of the Hand-Eye Constraint}, 
+  year={2022},
+  pages={1244-1250},
+  doi={10.1109/ICRA46639.2022.9811577}}
+}
+```
+
+*If you use MultiCamCalib for your academic research, please cite our related papers.*
